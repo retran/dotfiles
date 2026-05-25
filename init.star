@@ -6,7 +6,7 @@
 
 # --- shared environment (dotmeow) ---
 
-component("@dotmeow//dotmeow")
+component("@dotmeow")
 
 # --- personal additions (add here) ---
 
