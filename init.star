@@ -8,6 +8,6 @@
 
 component("@dotmeow")
 
-# --- personal additions (add here) ---
+# --- personal additions ---
 
-# (none yet — dotmeow covers everything)
+component("hammerspoon-local")
