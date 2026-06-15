@@ -11,3 +11,4 @@ component("@dotmeow")
 # --- personal additions ---
 
 component("hammerspoon-local")
+component("karabiner-local")
