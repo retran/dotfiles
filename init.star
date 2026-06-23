@@ -44,5 +44,4 @@ component("@stdlib//components/24hr_wallpaper")
 
 # --- personal additions ---
 
-component("hammerspoon-local")
 component("karabiner-local")
