@@ -1,4 +1,4 @@
 module(name = "dotfiles", version = "0.1.1")
-dep(name = "dotmeow", version = "0.2.17")
+dep(name = "dotmeow", version = "0.2.18")
 dep(name = "adaptive-keyboard-layouts", version = "0.2.3")
 dep(name = "meowvim-keyboard-layouts", version = "0.2.3")
