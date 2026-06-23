@@ -4,7 +4,7 @@
 # Links local.lua into ~/.hammerspoon/ so dotmeow's init.lua picks it up.
 
 platforms = ["macos"]
-after = ["@dotmeow//components/hammerspoon-config", "@adaptive-keyboard-layouts", "@meowvim-keyboard-layouts"]
+after = ["@dotmeow//components/hammerspoon-config"]
 
 def install(ctx):
     ctx.link_file("local.lua", "~/.hammerspoon/local.lua")
