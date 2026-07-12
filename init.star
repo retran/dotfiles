@@ -1,8 +1,13 @@
-# init.star — personal dotfiles
+# init.star — shared base (work machine)
 #
-# This is a thin layer on top of the dotmeow shared module.
-# Dotmeow provides the complete macOS dev environment; this repo
-# adds personal-only apps and tools.
+# Thin layer over the dotmeow shared module. This file is the COMMON base and
+# is the complete config for the WORK machine. Personal / home-only apps are
+# NOT listed here — they live in local.star.personal and are opted into per
+# machine via local.star (gitignored; meowctl appends its components to this
+# base). See README.
+#
+#   Work machine:  init.star only.
+#   Home machine:  ln -sf local.star.personal local.star   (adds personal apps)
 
 # --- shared environment (dotmeow) ---
 
@@ -13,33 +18,10 @@ component("@dotmeow")
 component("@stdlib//components/opencode")
 component("@stdlib//components/claude-code")
 
-# --- personal apps: communication ---
+# --- Mac App Store (base) ---
 
-# component("@stdlib//components/discord")
-# component("@stdlib//components/telegram")
-# component("@stdlib//components/whatsapp")
-
-# --- personal apps: creative / gaming ---
-
-# component("@stdlib//components/blender")
-# component("@stdlib//components/obs")
-# component("@stdlib//components/steam")
-# component("@stdlib//components/nvidia_geforce_now")
-
-# --- personal apps: productivity / tools ---
-
-# component("@stdlib//components/orbstack")
-# component("@stdlib//components/zed")
-
-# --- personal apps: Mac App Store ---
-
-# component("@stdlib//components/garageband")
 component("@stdlib//components/kindle")
-# component("@stdlib//components/pixelmator_pro")
 component("@stdlib//components/runcat")
-# component("@stdlib//components/mini_metro")
-# component("@stdlib//components/mini_motorways")
-# component("@stdlib//components/prime_video")
 component("@stdlib//components/24hr_wallpaper")
 
 # --- personal additions ---
