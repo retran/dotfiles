@@ -3,28 +3,31 @@
 # platform: macos
 #
 # Personal Godot gamedev setup (GDScript; no C#/Mono for now).
-#   - godot     (brew cask)  : the Godot editor .app (GUI, Spotlight/Dock).
-#   - gdtoolkit (pip)         : gdformat + gdlint CLIs.
+# Installs ONLY the machine-level editor:
+#   - godot (brew cask) : the Godot editor .app (GUI, Spotlight/Dock) + `godot` on PATH.
+#
+# GDScript TOOLING (gdformat/gdlint from gdtoolkit) is deliberately NOT installed
+# globally — by convention it lives in each Godot project's own mise.toml, so
+# every project pins its own version. Drop this into a project root:
+#
+#     # <project>/mise.toml
+#     [tools]
+#     "pipx:gdtoolkit" = "4.5"
+#
+# Then `mise install` in the project. meowvim's conform (gdformat) and nvim-lint
+# (gdlint) resolve those via mise shims when nvim's cwd is inside the project.
 #
 # meowvim already ships the full GDScript stack — tree-sitter grammar, the LSP
-# (connects over TCP to the running editor on :6005), the DAP adapter (:6006),
-# and conform/nvim-lint wired to gdformat/gdlint. This component just provides
-# the binaries those integrations shell out to.
-#
-# Note: Godot's GDScript LSP is the editor itself — open the project in Godot
-# and nvim's gdscript client attaches to it (Editor Settings → Network →
-# Language Server, port 6005; DAP debug server on 6006).
+# (attaches over TCP to the running editor on :6005), the DAP adapter (:6006),
+# and the conform/nvim-lint wiring. This component only provides the editor.
 
 platforms = ["macos"]
 
 def install(ctx):
     pkg(manager = "brew", name = "godot", cask = True)
-    pkg(manager = "python", name = "gdtoolkit")
 
 def upgrade(ctx):
     uppkg(manager = "brew", name = "godot", cask = True)
-    uppkg(manager = "python", name = "gdtoolkit")
 
 def uninstall(ctx):
     unpkg(manager = "brew", name = "godot", cask = True)
-    unpkg(manager = "python", name = "gdtoolkit")

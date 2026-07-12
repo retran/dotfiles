@@ -1,0 +1,10 @@
+# Godot project mise.toml — copy to a project root as `mise.toml`, then `mise install`.
+#
+#   cp ~/.config/meowctl/components/godot-gamedev/godot-project.mise.toml <project>/mise.toml
+#
+# Pins the GDScript tooling per-project (not globally). meowvim's conform
+# (gdformat) and nvim-lint (gdlint) pick these up via mise shims when editing
+# inside the project.
+
+[tools]
+"pipx:gdtoolkit" = "4.5"
