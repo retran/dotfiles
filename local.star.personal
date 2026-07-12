@@ -1,0 +1,37 @@
+# local.star.personal — home-machine component additions.
+#
+# The home machine opts into these personal apps by symlinking this file to
+# local.star (which is gitignored; meowctl appends its components onto the
+# init.star base):
+#
+#     ln -sf local.star.personal local.star
+#
+# The work machine has no local.star and therefore gets only the init.star base.
+# Keeping this list here (committed) means the base is never duplicated: work
+# and home share init.star, and only this delta differs.
+
+# --- communication ---
+
+component("@stdlib//components/discord")
+component("@stdlib//components/telegram")
+component("@stdlib//components/whatsapp")
+
+# --- creative / gaming ---
+
+component("@stdlib//components/blender")
+component("@stdlib//components/obs")
+component("@stdlib//components/steam")
+component("@stdlib//components/nvidia_geforce_now")
+
+# --- productivity / tools ---
+
+component("@stdlib//components/orbstack")
+component("@stdlib//components/zed")
+
+# --- Mac App Store ---
+
+component("@stdlib//components/garageband")
+component("@stdlib//components/pixelmator_pro")
+component("@stdlib//components/mini_metro")
+component("@stdlib//components/mini_motorways")
+component("@stdlib//components/prime_video")
