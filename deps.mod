@@ -1,2 +1,2 @@
 module(name = "dotfiles", version = "0.1.1")
-dep(name = "dotmeow", version = "0.3.5")
+dep(name = "dotmeow", version = "0.3.6")
