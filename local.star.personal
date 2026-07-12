@@ -35,3 +35,7 @@ component("@stdlib//components/pixelmator_pro")
 component("@stdlib//components/mini_metro")
 component("@stdlib//components/mini_motorways")
 component("@stdlib//components/prime_video")
+
+# --- gamedev (GDScript) ---
+
+component("godot-gamedev")
