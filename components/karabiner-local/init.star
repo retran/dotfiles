@@ -1,8 +1,9 @@
 # components/karabiner-local/init.star
 #
 # Personal Karabiner-Elements config.
-# Extends dotmeow's shared config (caps lock remap) with Das Keyboard
-# device-specific modifier swaps (ANSI USA layout, vendor 9456 / product 320).
+# Caps Lock remap (tap → Escape, hold → Left Control), ANSI virtual keyboard,
+# built-in keyboard tilde/backslash swap, plus Das Keyboard device-specific
+# modifier swaps (vendor 9456 / product 320).
 # Re-links ~/.config/karabiner/karabiner.json to this file, replacing the
 # dotmeow symlink since Karabiner reads a single JSON config.
 

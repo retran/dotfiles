@@ -1,11 +1,12 @@
 {
-  "global": {
-    "show_in_menu_bar": false
-  },
   "profiles": [
     {
-      "name": "Default",
+      "name": "Default profile",
       "selected": true,
+      "virtual_hid_keyboard": {
+        "country_code": 0,
+        "keyboard_type_v2": "ansi"
+      },
       "complex_modifications": {
         "parameters": {
           "basic.to_if_alone_timeout_milliseconds": 200,
@@ -32,9 +33,31 @@
         {
           "identifiers": {
             "is_keyboard": true,
-            "product_id": 320,
-            "vendor_id": 9456
+            "is_pointing_device": false,
+            "vendor_id": 0,
+            "product_id": 0
           },
+          "ignore": false,
+          "manipulate_caps_lock_led": true,
+          "simple_modifications": [
+            {
+              "from": { "key_code": "non_us_backslash" },
+              "to": [{ "key_code": "grave_accent_and_tilde" }]
+            },
+            {
+              "from": { "key_code": "grave_accent_and_tilde" },
+              "to": [{ "key_code": "non_us_backslash" }]
+            }
+          ]
+        },
+        {
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "vendor_id": 9456,
+            "product_id": 320
+          },
+          "ignore": false,
           "simple_modifications": [
             {
               "from": { "key_code": "left_command" },
@@ -54,12 +77,7 @@
             }
           ]
         }
-      ],
-      "virtual_hid_keyboard": {
-        "keyboard_type": "iso",
-        "keyboard_type_v2": "iso",
-        "caps_lock_delay_milliseconds": 0
-      }
+      ]
     }
   ]
 }
