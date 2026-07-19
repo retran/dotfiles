@@ -2,8 +2,7 @@
 #
 # Personal Karabiner-Elements config.
 # Caps Lock remap (tap → Escape, hold → Left Control), ANSI virtual keyboard,
-# built-in keyboard tilde/backslash swap, plus Das Keyboard device-specific
-# modifier swaps (vendor 9456 / product 320).
+# built-in keyboard tilde/backslash swap (ISO layout).
 # Re-links ~/.config/karabiner/karabiner.json to this file, replacing the
 # dotmeow symlink since Karabiner reads a single JSON config.
 
