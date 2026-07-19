@@ -23,7 +23,3 @@ component("@stdlib//components/claude-code")
 component("@stdlib//components/kindle")
 component("@stdlib//components/runcat")
 component("@stdlib//components/24hr_wallpaper")
-
-# --- personal additions ---
-
-component("karabiner-local")
