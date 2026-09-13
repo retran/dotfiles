@@ -5,5 +5,5 @@ module(
     version = "0.1.1",
 )
 
-dep(name = "dotmeow", version = "0.3.19")
+dep(name = "dotmeow", version = "0.3.20")
 
