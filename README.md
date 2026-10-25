@@ -10,7 +10,7 @@ A thin layer over the [dotmeow](https://github.com/meowshed/dotmeow) shared modu
 init.star            # shared base (work machine): dotmeow + AI tools + a few base apps
 local.star.personal  # home-only apps (committed profile — symlink to local.star on the home box)
 deps.mod             # module declaration + dotmeow dependency
-components/           # personal component overlays (karabiner-local, …)
+components/          # personal components (codex, xcode, brew-extras, godot-gamedev)
 ```
 
 ## Two machines, one repo
