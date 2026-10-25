@@ -22,11 +22,13 @@ component("@stdlib//components/blender")
 component("@stdlib//components/obs")
 component("@stdlib//components/steam")
 component("@stdlib//components/nvidia_geforce_now")
+component("@stdlib//components/battle_net")
 
 # --- productivity / tools ---
 
 component("@stdlib//components/orbstack")
 component("@stdlib//components/zed")
+component("@stdlib//components/upscayl")
 
 # --- Mac App Store ---
 

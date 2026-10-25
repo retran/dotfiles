@@ -17,9 +17,29 @@ component("@dotmeow")
 
 component("@stdlib//components/opencode")
 component("@stdlib//components/claude-code")
+component("codex")
+
+# --- languages / build ---
+
+component("@stdlib//components/go")
+component("@stdlib//components/node")
+component("@stdlib//components/python")
+component("@stdlib//components/uv")
+component("@stdlib//components/gradle")
+component("@stdlib//components/maven")
+
+# --- git / brew extras ---
+
+component("@stdlib//components/git")
+component("@stdlib//components/tig")
+component("brew-extras")
 
 # --- Mac App Store (base) ---
 
 component("@stdlib//components/kindle")
 component("@stdlib//components/runcat")
 component("@stdlib//components/24hr_wallpaper")
+component("@stdlib//components/keynote")
+component("@stdlib//components/numbers")
+component("@stdlib//components/pages")
+component("xcode")
